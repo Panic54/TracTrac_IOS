@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		937FD0A7216602BD00CC39B8 /* TrackTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		937FD0A7216602BD00CC39B8 /* TracTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TracTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937FD0AA216602BD00CC39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937FD0AC216602BD00CC39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		937FD0AF216602BD00CC39B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		937FD0A8216602BD00CC39B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				937FD0A7216602BD00CC39B8 /* TrackTrack.app */,
+				937FD0A7216602BD00CC39B8 /* TracTrac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		937FD0A6216602BD00CC39B8 /* TrackTrack */ = {
+		937FD0A6216602BD00CC39B8 /* TracTrac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 937FD0B9216602BF00CC39B8 /* Build configuration list for PBXNativeTarget "TrackTrack" */;
+			buildConfigurationList = 937FD0B9216602BF00CC39B8 /* Build configuration list for PBXNativeTarget "TracTrac" */;
 			buildPhases = (
 				937FD0A3216602BD00CC39B8 /* Sources */,
 				937FD0A4216602BD00CC39B8 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = TrackTrack;
+			name = TracTrac;
 			productName = TrackTrack;
-			productReference = 937FD0A7216602BD00CC39B8 /* TrackTrack.app */;
+			productReference = 937FD0A7216602BD00CC39B8 /* TracTrac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 937FD0A2216602BD00CC39B8 /* Build configuration list for PBXProject "TrackTrack" */;
+			buildConfigurationList = 937FD0A2216602BD00CC39B8 /* Build configuration list for PBXProject "TracTrac" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				937FD0A6216602BD00CC39B8 /* TrackTrack */,
+				937FD0A6216602BD00CC39B8 /* TracTrac */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		937FD0A2216602BD00CC39B8 /* Build configuration list for PBXProject "TrackTrack" */ = {
+		937FD0A2216602BD00CC39B8 /* Build configuration list for PBXProject "TracTrac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				937FD0B7216602BF00CC39B8 /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		937FD0B9216602BF00CC39B8 /* Build configuration list for PBXNativeTarget "TrackTrack" */ = {
+		937FD0B9216602BF00CC39B8 /* Build configuration list for PBXNativeTarget "TracTrac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				937FD0BA216602BF00CC39B8 /* Debug */,
