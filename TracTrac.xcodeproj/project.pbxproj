@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93114797216F3B490010A9FD /* FrontPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114796216F3B490010A9FD /* FrontPage.storyboard */; };
+		93114799216F3B5F0010A9FD /* ClubsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114798216F3B5F0010A9FD /* ClubsPage.storyboard */; };
+		9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479A216F3B770010A9FD /* LoginPage.storyboard */; };
+		9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479C216F3B900010A9FD /* EventPage.storyboard */; };
+		9311479F216F3BA40010A9FD /* SearchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479E216F3BA40010A9FD /* SearchPage.storyboard */; };
 		937FD0AB216602BD00CC39B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AA216602BD00CC39B8 /* AppDelegate.swift */; };
 		937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AC216602BD00CC39B8 /* ViewController.swift */; };
 		937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0AE216602BD00CC39B8 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93114796216F3B490010A9FD /* FrontPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FrontPage.storyboard; sourceTree = "<group>"; };
+		93114798216F3B5F0010A9FD /* ClubsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClubsPage.storyboard; sourceTree = "<group>"; };
+		9311479A216F3B770010A9FD /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
+		9311479C216F3B900010A9FD /* EventPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventPage.storyboard; sourceTree = "<group>"; };
+		9311479E216F3BA40010A9FD /* SearchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchPage.storyboard; sourceTree = "<group>"; };
 		937FD0A7216602BD00CC39B8 /* TracTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TracTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937FD0AA216602BD00CC39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937FD0AC216602BD00CC39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931147A0216F3BAF0010A9FD /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				937FD0B3216602BF00CC39B8 /* LaunchScreen.storyboard */,
+				93114798216F3B5F0010A9FD /* ClubsPage.storyboard */,
+				9311479A216F3B770010A9FD /* LoginPage.storyboard */,
+				9311479C216F3B900010A9FD /* EventPage.storyboard */,
+				9311479E216F3BA40010A9FD /* SearchPage.storyboard */,
+				93114796216F3B490010A9FD /* FrontPage.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		937FD09E216602BD00CC39B8 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +77,11 @@
 		937FD0A9216602BD00CC39B8 /* TrackTrack */ = {
 			isa = PBXGroup;
 			children = (
+				931147A0216F3BAF0010A9FD /* StoryBoards */,
 				937FD0AA216602BD00CC39B8 /* AppDelegate.swift */,
 				937FD0AC216602BD00CC39B8 /* ViewController.swift */,
 				937FD0AE216602BD00CC39B8 /* Main.storyboard */,
 				937FD0B1216602BF00CC39B8 /* Assets.xcassets */,
-				937FD0B3216602BF00CC39B8 /* LaunchScreen.storyboard */,
 				937FD0B6216602BF00CC39B8 /* Info.plist */,
 			);
 			path = TrackTrack;
@@ -123,8 +146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				937FD0B5216602BF00CC39B8 /* LaunchScreen.storyboard in Resources */,
+				93114797216F3B490010A9FD /* FrontPage.storyboard in Resources */,
 				937FD0B2216602BF00CC39B8 /* Assets.xcassets in Resources */,
 				937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */,
+				93114799216F3B5F0010A9FD /* ClubsPage.storyboard in Resources */,
+				9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */,
+				9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */,
+				9311479F216F3BA40010A9FD /* SearchPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
