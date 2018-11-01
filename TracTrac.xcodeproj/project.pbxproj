@@ -17,6 +17,7 @@
 		937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0AE216602BD00CC39B8 /* Main.storyboard */; };
 		937FD0B2216602BF00CC39B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0B1216602BF00CC39B8 /* Assets.xcassets */; };
 		937FD0B5216602BF00CC39B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0B3216602BF00CC39B8 /* LaunchScreen.storyboard */; };
+		93B21AD3218AFDDB000F061F /* SettingsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B21AD2218AFDDB000F061F /* SettingsPage.storyboard */; };
 		93B4596A2181AF33005BF668 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B459692181AF33005BF668 /* EventTableViewController.swift */; };
 		93B459712181B06C005BF668 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B4596F2181B06C005BF668 /* EventTableViewCell.swift */; };
 		93B459722181B06C005BF668 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B459702181B06C005BF668 /* EventTableViewCell.xib */; };
@@ -35,6 +36,7 @@
 		937FD0B1216602BF00CC39B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937FD0B4216602BF00CC39B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937FD0B6216602BF00CC39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B21AD2218AFDDB000F061F /* SettingsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsPage.storyboard; sourceTree = "<group>"; };
 		93B459692181AF33005BF668 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		93B4596F2181B06C005BF668 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		93B459702181B06C005BF668 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		931147A0216F3BAF0010A9FD /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				93B21AD2218AFDDB000F061F /* SettingsPage.storyboard */,
 				937FD0B3216602BF00CC39B8 /* LaunchScreen.storyboard */,
 				93114798216F3B5F0010A9FD /* ClubsPage.storyboard */,
 				9311479A216F3B770010A9FD /* LoginPage.storyboard */,
@@ -165,6 +168,7 @@
 				937FD0B5216602BF00CC39B8 /* LaunchScreen.storyboard in Resources */,
 				93114797216F3B490010A9FD /* FrontPage.storyboard in Resources */,
 				937FD0B2216602BF00CC39B8 /* Assets.xcassets in Resources */,
+				93B21AD3218AFDDB000F061F /* SettingsPage.storyboard in Resources */,
 				937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */,
 				93114799216F3B5F0010A9FD /* ClubsPage.storyboard in Resources */,
 				9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */,
