@@ -29,15 +29,18 @@ class EventTableViewController: UITableViewController {
     
     override func viewDidLoad() {
     
-        arrayOfCellData = [cellData(cell: 1, eventName: "EuroSail 2018", sportName: "Sailing", date: "20-27.2018", races: "48 Races", competitors: "12 Competitors", flagImage: #imageLiteral(resourceName: "Eurosail.png"), sportImage: #imageLiteral(resourceName: "Eurosail.png"), dateImage: #imageLiteral(resourceName: "Eurosail.png"), raceImage: #imageLiteral(resourceName: "Eurosail.png"), compotitorsImage: #imageLiteral(resourceName: "Eurosail.png"))]
+       // arrayOfCellData = [cellData(cell: 1, eventName: "EuroSail 2018", sportName: "Sailing", date: "20-27.2018", races: "48 Races", competitors: "12 Competitors", flagImage: #imageLiteral(resourceName: "Eurosail.png"), sportImage: #imageLiteral(resourceName: "Eurosail.png"), dateImage: #imageLiteral(resourceName: "Eurosail.png"), raceImage: #imageLiteral(resourceName: "Eurosail.png"), compotitorsImage: #imageLiteral(resourceName: "Eurosail.png"))]
+        
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
    return arrayOfCellData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if arrayOfCellData[indexPath.row].cell == 1{
-            let cell = Bundle.main.loadNibNamed("EventTableViewCell", owner: self, options: nil)?.first as! EventTableViewCell
+            print("Test")
+            let cell = Bundle.main.loadNibNamed("Event", owner: self, options: nil)?.first as! Event
             cell.flagImage.image = arrayOfCellData[indexPath.row].flagImage
             cell.sportLabel.text = arrayOfCellData[indexPath.row].sportName
             cell.nameOfEvent.text = arrayOfCellData[indexPath.row].eventName
@@ -48,7 +51,8 @@ class EventTableViewController: UITableViewController {
             
         }
         else {
-            let cell = Bundle.main.loadNibNamed("EventTableViewCell", owner: self, options: nil)?.first as! EventTableViewCell
+            print("Fool")
+            let cell = Bundle.main.loadNibNamed("Event", owner: self, options: nil)?.first as! Event
             cell.flagImage.image = arrayOfCellData[indexPath.row].flagImage
             cell.sportLabel.text = arrayOfCellData[indexPath.row].sportName
             cell.nameOfEvent.text = arrayOfCellData[indexPath.row].eventName

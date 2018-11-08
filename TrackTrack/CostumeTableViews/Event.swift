@@ -8,9 +8,8 @@
 
 import UIKit
 
-class EventTableViewCell: UITableViewCell {
+class Event: UITableViewCell {
 
-   
     @IBOutlet var flagImage: UIImageView!
     @IBOutlet var sportEmblem: UIImageView!
     @IBOutlet var dateImage: UIImageView!
@@ -22,4 +21,9 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet var dateLabe: UILabel!
     @IBOutlet var competitorsLabel: UILabel!
     @IBOutlet var raceLabel: UILabel!
+    
+    
+    
+    
+    
 }
