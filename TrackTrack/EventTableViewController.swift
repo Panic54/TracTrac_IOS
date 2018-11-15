@@ -9,63 +9,52 @@
 import Foundation
 import UIKit
 
-struct cellData {
-    let cell : Int!
-    let eventName : String!
-    let sportName : String!
-    let date : String!
-    let races : String!
-    let competitors : String!
-    
-    let flagImage : UIImage!
-    let sportImage : UIImage!
-    let dateImage : UIImage!
-    let raceImage : UIImage!
-    let compotitorsImage : UIImage!
-}
-
 class EventTableViewController: UITableViewController {
-    var arrayOfCellData = [cellData]()
+    var events = [Event]()
     
     override func viewDidLoad() {
-    
-       // arrayOfCellData = [cellData(cell: 1, eventName: "EuroSail 2018", sportName: "Sailing", date: "20-27.2018", races: "48 Races", competitors: "12 Competitors", flagImage: #imageLiteral(resourceName: "Eurosail.png"), sportImage: #imageLiteral(resourceName: "Eurosail.png"), dateImage: #imageLiteral(resourceName: "Eurosail.png"), raceImage: #imageLiteral(resourceName: "Eurosail.png"), compotitorsImage: #imageLiteral(resourceName: "Eurosail.png"))]
-        
+        super.viewDidLoad()
+        fillView()
+         print("viewDidLoad")
     }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-   return arrayOfCellData.count
+        // #warning Incomplete implementation, return the number of rows
+        return events.count
     }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
+    func fillView()  {
+         print("FillView func")
+        let sampleEvent = [Event(flagImage: UIImage(named: "EuroSail"), sportEmblem: UIImage (named: "EuroSail"), dateImage:  UIImage(named: "EuroSail"), raceImage: UIImage (named: "EuroSail"), competitorsImage: UIImage (named: "EuroSail"),
+                                 nameOfEvent: "Test", sportLabel: "String", dateLabel: "Test", competitorsLabel: "test", raceLabel: "test")]
         
-        if arrayOfCellData[indexPath.row].cell == 1{
-            print("Test")
-            let cell = Bundle.main.loadNibNamed("Event", owner: self, options: nil)?.first as! Event
-            cell.flagImage.image = arrayOfCellData[indexPath.row].flagImage
-            cell.sportLabel.text = arrayOfCellData[indexPath.row].sportName
-            cell.nameOfEvent.text = arrayOfCellData[indexPath.row].eventName
-            cell.dateLabe.text = arrayOfCellData[indexPath.row].date
-            cell.competitorsLabel.text = arrayOfCellData[indexPath.row].competitors
-            cell.raceLabel.text = arrayOfCellData[indexPath.row].races
-            return cell
-            
-        }
-        else {
-            print("Fool")
-            let cell = Bundle.main.loadNibNamed("Event", owner: self, options: nil)?.first as! Event
-            cell.flagImage.image = arrayOfCellData[indexPath.row].flagImage
-            cell.sportLabel.text = arrayOfCellData[indexPath.row].sportName
-            cell.nameOfEvent.text = arrayOfCellData[indexPath.row].eventName
-            cell.dateLabe.text = arrayOfCellData[indexPath.row].date
-            cell.competitorsLabel.text = arrayOfCellData[indexPath.row].competitors
-            cell.raceLabel.text = arrayOfCellData[indexPath.row].races
-            return cell
-        }
+        events = sampleEvent.compactMap{$0}
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+    override func tableView(_ tableView: UITableView, cellForRowAt
+        indexPath: IndexPath) -> UITableViewCell {
+         print("TableView func")
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
+        
+        cell.flag?.image = events [indexPath.row].flagImage
+        cell.compImage.image = events [indexPath.row].competitorsImage
+        cell.dateImage?.image = events [indexPath.row].dateImage
+        cell.raceImage?.image = events [indexPath.row].raceImage
+        cell.sportFlag?.image = events[indexPath.row].sportEmblem
+        
+        cell.eventName?.text = events[indexPath.row].nameOfEvent
+        cell.compLabel?.text = events[indexPath.row].competitorsLabel
+
+        cell.dateLabel?.text = events[indexPath.row].dateLabel
+        cell.sportLabel?.text = events[indexPath.row].sportLabel
+        cell.raceLabel?.text = events[indexPath.row].raceLabel
+        
+       return cell
     }
-    
-    
 }
 
