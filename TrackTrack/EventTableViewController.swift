@@ -35,6 +35,7 @@ class EventTableViewController: UITableViewController {
         
         events = sampleEvent.compactMap{$0}
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt
         indexPath: IndexPath) -> UITableViewCell {
          print("TableView func")
