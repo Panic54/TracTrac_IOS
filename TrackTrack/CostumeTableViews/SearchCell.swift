@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class SearchCell: UITableViewCell {
-    @IBOutlet var emblem: UIImageView?
-    @IBOutlet var text01: UILabel?
-    @IBOutlet var text02: UILabel?
+    
+    @IBOutlet var emblem: UIImageView!
+    @IBOutlet var text02: UILabel!
+
+    @IBOutlet var text01: UILabel!
 }

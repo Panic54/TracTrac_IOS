@@ -33,6 +33,9 @@
                                         <string>Events</string>
                                         <string>Clubs</string>
                                     </scopeButtonTitles>
+                                    <connections>
+                                        <outlet property="delegate" destination="DcO-jf-H3u" id="v3x-Ww-xFk"/>
+                                    </connections>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="103" id="L1y-s0-Hpg" customClass="SearchCell" customModule="TracTrac" customModuleProvider="target">
@@ -42,51 +45,56 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-lD-p8L">
-                                                    <rect key="frame" x="166" y="25" width="47" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-lD-p8L">
+                                                    <rect key="frame" x="166" y="25" width="194" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-m4-Ned">
-                                                    <rect key="frame" x="166" y="59" width="42" height="21"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-zF-T4d">
+                                                    <rect key="frame" x="15" y="15" width="132.5" height="74"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-m4-Ned">
+                                                    <rect key="frame" x="166" y="61" width="194" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-zF-T4d">
-                                                    <rect key="frame" x="15" y="15" width="132" height="74"/>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Mtz-m4-Ned" firstAttribute="top" secondItem="fM0-lD-p8L" secondAttribute="bottom" constant="11" id="2pF-49-Hu3"/>
                                                 <constraint firstItem="OG8-zF-T4d" firstAttribute="leading" secondItem="kzT-c9-r6c" secondAttribute="leadingMargin" id="BLh-xt-mMl"/>
                                                 <constraint firstItem="OG8-zF-T4d" firstAttribute="top" secondItem="kzT-c9-r6c" secondAttribute="topMargin" constant="4" id="Ct7-Ro-VJm"/>
-                                                <constraint firstItem="Mtz-m4-Ned" firstAttribute="leading" secondItem="OG8-zF-T4d" secondAttribute="trailing" constant="19" id="F1J-go-chO"/>
-                                                <constraint firstItem="fM0-lD-p8L" firstAttribute="leading" secondItem="OG8-zF-T4d" secondAttribute="trailing" constant="19" id="PtH-iO-gb5"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Mtz-m4-Ned" secondAttribute="trailing" constant="152" id="Qy9-ht-50E"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Mtz-m4-Ned" secondAttribute="bottom" constant="12" id="X2K-Ht-1Dr"/>
+                                                <constraint firstItem="fM0-lD-p8L" firstAttribute="top" secondItem="kzT-c9-r6c" secondAttribute="top" constant="25" id="Ncs-PE-xhY"/>
+                                                <constraint firstAttribute="bottom" secondItem="fM0-lD-p8L" secondAttribute="bottom" constant="54.5" id="Wbu-If-8yp"/>
+                                                <constraint firstItem="Mtz-m4-Ned" firstAttribute="leading" secondItem="OG8-zF-T4d" secondAttribute="trailing" constant="18.5" id="Yc4-mJ-vdu"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mtz-m4-Ned" secondAttribute="bottom" constant="20.5" id="bBk-04-D3h"/>
                                                 <constraint firstItem="OG8-zF-T4d" firstAttribute="leading" secondItem="kzT-c9-r6c" secondAttribute="leadingMargin" id="bMc-xH-xNj"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="OG8-zF-T4d" secondAttribute="bottom" constant="3" id="bmG-yo-O4M"/>
+                                                <constraint firstItem="Mtz-m4-Ned" firstAttribute="top" secondItem="fM0-lD-p8L" secondAttribute="bottom" constant="13" id="d7A-NB-EkZ"/>
                                                 <constraint firstItem="OG8-zF-T4d" firstAttribute="top" secondItem="kzT-c9-r6c" secondAttribute="topMargin" constant="4" id="flV-D7-gyS"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="fM0-lD-p8L" secondAttribute="trailing" constant="147" id="hQM-aS-CnM"/>
-                                                <constraint firstItem="fM0-lD-p8L" firstAttribute="leading" secondItem="OG8-zF-T4d" secondAttribute="trailing" constant="19" id="jv9-jc-rXU"/>
-                                                <constraint firstItem="Mtz-m4-Ned" firstAttribute="top" secondItem="fM0-lD-p8L" secondAttribute="bottom" constant="11" id="o5d-m6-gSC"/>
-                                                <constraint firstItem="fM0-lD-p8L" firstAttribute="top" secondItem="kzT-c9-r6c" secondAttribute="topMargin" constant="14" id="pXl-cV-zoE"/>
+                                                <constraint firstItem="fM0-lD-p8L" firstAttribute="leading" secondItem="OG8-zF-T4d" secondAttribute="trailing" constant="18.5" id="xft-Gj-3FX"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="OG8-zF-T4d" secondAttribute="bottom" constant="3" id="yWh-D2-5nY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emblem" destination="OG8-zF-T4d" id="0Jf-ll-vsf"/>
+                                            <outlet property="text01" destination="fM0-lD-p8L" id="FDj-fL-MEC"/>
+                                            <outlet property="text02" destination="Mtz-m4-Ned" id="agy-FB-wsE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="DcO-jf-H3u" id="f07-CK-5gc"/>
-                                    <outlet property="delegate" destination="DcO-jf-H3u" id="NSl-aP-oEx"/>
+                                    <outlet property="delegate" destination="DcO-jf-H3u" id="54D-TG-L1q"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DHM-fy-bkh"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="c2n-Er-Gn2" id="3SG-SC-np6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8b-IX-zgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

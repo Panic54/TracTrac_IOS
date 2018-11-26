@@ -14,14 +14,13 @@ class Search  {
     let catagory: SportType
     
     init(emblem: String,
-         text1: String, catagory: SportType) {
+         text01: String, catagory: SportType) {
         
         self.emblem = emblem
-        self.text01 = text1
+        self.text01 = text01
         self.catagory = catagory
     }
 }
-
 
 enum SportType: String {
     case sailing = "Sailing"
