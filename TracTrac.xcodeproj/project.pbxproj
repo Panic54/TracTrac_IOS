@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129A1CEE21A6AF3700E21B64 /* ClubsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */; };
+		129A1CF221A6B4A900E21B64 /* ClubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A1CF121A6B4A900E21B64 /* ClubsCell.swift */; };
 		93114797216F3B490010A9FD /* FrontPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114796216F3B490010A9FD /* FrontPage.storyboard */; };
 		93114799216F3B5F0010A9FD /* ClubsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114798216F3B5F0010A9FD /* ClubsPage.storyboard */; };
 		9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479A216F3B770010A9FD /* LoginPage.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsPageViewController.swift; sourceTree = "<group>"; };
+		129A1CF121A6B4A900E21B64 /* ClubsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
 		93114796216F3B490010A9FD /* FrontPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FrontPage.storyboard; sourceTree = "<group>"; };
 		93114798216F3B5F0010A9FD /* ClubsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClubsPage.storyboard; sourceTree = "<group>"; };
 		9311479A216F3B770010A9FD /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				931147A0216F3BAF0010A9FD /* StoryBoards */,
 				937FD0AA216602BD00CC39B8 /* AppDelegate.swift */,
 				937FD0AC216602BD00CC39B8 /* ViewController.swift */,
+				129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */,
 				93B459692181AF33005BF668 /* EventTableViewController.swift */,
 				934C579521A2E34700C50142 /* SearchPageViewController.swift */,
 				937FD0AE216602BD00CC39B8 /* Main.storyboard */,
@@ -116,6 +121,7 @@
 		93B459732181B078005BF668 /* CostumeTableViews */ = {
 			isa = PBXGroup;
 			children = (
+				129A1CF121A6B4A900E21B64 /* ClubsCell.swift */,
 				931F32A52194345D008980FE /* EventCell.swift */,
 				93B4596F2181B06C005BF668 /* Event.swift */,
 				9312E8C421A68E4C00269175 /* Search.swift */,
@@ -203,8 +209,10 @@
 				93B21AD6218B0915000F061F /* SearchViewController.swift in Sources */,
 				93B459712181B06C005BF668 /* Event.swift in Sources */,
 				937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */,
+				129A1CF221A6B4A900E21B64 /* ClubsCell.swift in Sources */,
 				93B4596A2181AF33005BF668 /* EventTableViewController.swift in Sources */,
 				9312E8C721A68E6800269175 /* SearchCell.swift in Sources */,
+				129A1CEE21A6AF3700E21B64 /* ClubsPageViewController.swift in Sources */,
 				934C579621A2E34700C50142 /* SearchPageViewController.swift in Sources */,
 				9312E8C521A68E4C00269175 /* Search.swift in Sources */,
 				931F32A62194345D008980FE /* EventCell.swift in Sources */,
