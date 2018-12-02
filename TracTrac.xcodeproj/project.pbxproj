@@ -11,6 +11,8 @@
 		129A1CEE21A6AF3700E21B64 /* ClubsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */; };
 		12C071C421B407400012DE05 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071C321B407400012DE05 /* Club.swift */; };
 		12C071CF21B40D530012DE05 /* ClubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071CD21B40CF50012DE05 /* ClubsCell.swift */; };
+		12C071D321B435BD0012DE05 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D221B435BC0012DE05 /* LoginPageViewController.swift */; };
+		12C071D521B47B870012DE05 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D421B47B870012DE05 /* UserPageViewController.swift */; };
 		93114797216F3B490010A9FD /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114796216F3B490010A9FD /* HomePage.storyboard */; };
 		9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479A216F3B770010A9FD /* LoginPage.storyboard */; };
 		9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479C216F3B900010A9FD /* EventPage.storyboard */; };
@@ -37,6 +39,8 @@
 		129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsPageViewController.swift; sourceTree = "<group>"; };
 		12C071C321B407400012DE05 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 		12C071CD21B40CF50012DE05 /* ClubsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
+		12C071D221B435BC0012DE05 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		12C071D421B47B870012DE05 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		93114796216F3B490010A9FD /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		9311479A216F3B770010A9FD /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		9311479C216F3B900010A9FD /* EventPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventPage.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		931147A0216F3BAF0010A9FD /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				937FD0AE216602BD00CC39B8 /* Main.storyboard */,
 				1276165221B340DE00F6DB9F /* ClubsPage.storyboard */,
 				9311479A216F3B770010A9FD /* LoginPage.storyboard */,
 				9311479C216F3B900010A9FD /* EventPage.storyboard */,
@@ -107,10 +112,6 @@
 				93B459732181B078005BF668 /* CostumeTableViews */,
 				931147A0216F3BAF0010A9FD /* StoryBoards */,
 				937FD0AA216602BD00CC39B8 /* AppDelegate.swift */,
-				937FD0AC216602BD00CC39B8 /* ViewController.swift */,
-				129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */,
-				93B459692181AF33005BF668 /* EventTableViewController.swift */,
-				937FD0AE216602BD00CC39B8 /* Main.storyboard */,
 				937FD0B6216602BF00CC39B8 /* Info.plist */,
 				938DB9EB21AFE39100A3E069 /* Assets.xcassets */,
 				12C071C321B407400012DE05 /* Club.swift */,
@@ -121,9 +122,14 @@
 		93B21AD4218B08DA000F061F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				12C071D221B435BC0012DE05 /* LoginPageViewController.swift */,
+				129A1CED21A6AF3700E21B64 /* ClubsPageViewController.swift */,
+				93B459692181AF33005BF668 /* EventTableViewController.swift */,
+				93E84AFE21AC41DA00AD8D69 /* HomeViewController.swift */,
 				934C579521A2E34700C50142 /* SearchPageViewController.swift */,
 				93B21AD5218B0915000F061F /* SearchViewController.swift */,
-				93E84AFE21AC41DA00AD8D69 /* HomeViewController.swift */,
+				937FD0AC216602BD00CC39B8 /* ViewController.swift */,
+				12C071D421B47B870012DE05 /* UserPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				93B21AD6218B0915000F061F /* SearchViewController.swift in Sources */,
 				93B459712181B06C005BF668 /* Event.swift in Sources */,
 				937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */,
+				12C071D521B47B870012DE05 /* UserPageViewController.swift in Sources */,
 				93B4596A2181AF33005BF668 /* EventTableViewController.swift in Sources */,
 				93E84AFF21AC41DA00AD8D69 /* HomeViewController.swift in Sources */,
 				9312E8C721A68E6800269175 /* SearchCell.swift in Sources */,
@@ -231,6 +238,7 @@
 				9312E8C521A68E4C00269175 /* Search.swift in Sources */,
 				931F32A62194345D008980FE /* EventCell.swift in Sources */,
 				93FD2D9521AC3BCF00AD8F96 /* Home.swift in Sources */,
+				12C071D321B435BD0012DE05 /* LoginPageViewController.swift in Sources */,
 				937FD0AB216602BD00CC39B8 /* AppDelegate.swift in Sources */,
 				12C071CF21B40D530012DE05 /* ClubsCell.swift in Sources */,
 			);
