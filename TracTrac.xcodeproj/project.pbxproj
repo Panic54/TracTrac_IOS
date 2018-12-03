@@ -13,6 +13,7 @@
 		12C071CF21B40D530012DE05 /* ClubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071CD21B40CF50012DE05 /* ClubsCell.swift */; };
 		12C071D321B435BD0012DE05 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D221B435BC0012DE05 /* LoginPageViewController.swift */; };
 		12C071D521B47B870012DE05 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D421B47B870012DE05 /* UserPageViewController.swift */; };
+		9302350F21B532B700CC5E96 /* TracTrac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9302350D21B532B700CC5E96 /* TracTrac.xcdatamodeld */; };
 		93114797216F3B490010A9FD /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114796216F3B490010A9FD /* HomePage.storyboard */; };
 		9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479A216F3B770010A9FD /* LoginPage.storyboard */; };
 		9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479C216F3B900010A9FD /* EventPage.storyboard */; };
@@ -41,6 +42,7 @@
 		12C071CD21B40CF50012DE05 /* ClubsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsCell.swift; sourceTree = "<group>"; };
 		12C071D221B435BC0012DE05 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		12C071D421B47B870012DE05 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		9302350E21B532B700CC5E96 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		93114796216F3B490010A9FD /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		9311479A216F3B770010A9FD /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		9311479C216F3B900010A9FD /* EventPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventPage.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		937FD09E216602BD00CC39B8 = {
 			isa = PBXGroup;
 			children = (
+				9302350D21B532B700CC5E96 /* TracTrac.xcdatamodeld */,
 				937FD0A9216602BD00CC39B8 /* TrackTrack */,
 				937FD0A8216602BD00CC39B8 /* Products */,
 			);
@@ -226,6 +229,7 @@
 			files = (
 				93B21AD6218B0915000F061F /* SearchViewController.swift in Sources */,
 				93B459712181B06C005BF668 /* Event.swift in Sources */,
+				9302350F21B532B700CC5E96 /* TracTrac.xcdatamodeld in Sources */,
 				937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */,
 				12C071D521B47B870012DE05 /* UserPageViewController.swift in Sources */,
 				93B4596A2181AF33005BF668 /* EventTableViewController.swift in Sources */,
@@ -438,6 +442,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9302350D21B532B700CC5E96 /* TracTrac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9302350E21B532B700CC5E96 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 9302350E21B532B700CC5E96 /* CoreData.xcdatamodel */;
+			path = TracTrac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 937FD09F216602BD00CC39B8 /* Project object */;
 }
