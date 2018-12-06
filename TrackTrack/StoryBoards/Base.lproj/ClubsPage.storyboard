@@ -30,7 +30,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyfourhourfinale" translatesAutoresizingMaskIntoConstraints="NO" id="6jP-1O-RjP" userLabel="Clubs Image View">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyfourhourfinale" translatesAutoresizingMaskIntoConstraints="NO" id="6jP-1O-RjP" userLabel="Clubs Image View">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         </imageView>
                                     </subviews>
@@ -60,7 +60,6 @@
         <!--Navigation Controller-->
         <scene sceneID="6Ch-00-sML">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pK5-HL-tF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lcJ-Wk-d3b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CmB-QW-z05">
@@ -72,6 +71,7 @@
                         <segue destination="6eg-G2-X8L" kind="relationship" relationship="rootViewController" id="W43-td-3lw"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pK5-HL-tF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="197.59999999999999" y="95.802098950524751"/>
         </scene>
