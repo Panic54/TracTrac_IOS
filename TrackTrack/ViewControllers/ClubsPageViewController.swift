@@ -19,34 +19,65 @@ class ClubsPageViewController: UICollectionViewController {
         super.viewDidLoad()
         fillClubs()
         
-        let width = collectionView!.frame.width / 3
+        let width = collectionView!.frame.width / 2
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
     }
     
     func fillClubs() {
-        let sampleClubs = [Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast")),
-                            Club(image: UIImage(named: "ast"))]
+        let sampleClubs = [Club(image: UIImage(named:"twentyfourhourfinale")),
+                           Club(image: UIImage(named:"abeamconsulting")),
+                           Club(image: UIImage(named: "boldhorizons")),
+                            Club(image: UIImage(named: "cya")),
+                            Club(image:UIImage(named:"cna")),
+                            Club(image: UIImage(named: "cnsp")),
+                            Club(image: UIImage(named: "dof")),
+                            Club(image: UIImage(named: "fedo")),
+                            Club(image: UIImage(named: "frederikogniko")),
+                            Club(image: UIImage(named: "ifkgoteborg")),
+                            Club(image: UIImage(named: "ifklidingo")),
+                            Club(image: UIImage(named: "ifkmora")),
+                            Club(image: UIImage(named: "knoxgs")),
+                            Club(image: UIImage(named: "lbc")),
+                            Club(image: UIImage(named: "lyc")),
+                            Club(image: UIImage(named: "lm")),
+                            Club(image: UIImage(named: "ms")),
+                            Club(image: UIImage(named: "osloseil")),
+                            Club(image: UIImage(named: "qmsc")),
+                            Club(image: UIImage(named: "rdyu")),
+                            Club(image: UIImage(named: "stg")),
+                            Club(image: UIImage(named: "sandefjordseil")),
+                            Club(image: UIImage(named: "scottishorien")),
+                            Club(image: UIImage(named: "seahelp")),
+                            Club(image: UIImage(named: "skovshoved")),
+                            Club(image: UIImage(named: "ssonderborgyc")),
+                            Club(image: UIImage(named: "spartacus")),
+                            Club(image: UIImage(named: "surfski")),
+                            Club(image: UIImage(named: "tvo")),
+                            Club(image: UIImage(named: "usos")),
+                            Club(image: UIImage(named: "zeil"))]
         
-    
-        func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        for club in sampleClubs {
+            if let club = club {
+                clubs.append(club)
+            }
+        }
+
+        
+    }
+   
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return clubs.count
     }
     
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ClubsCell
         
         // Configure the cell
@@ -55,5 +86,4 @@ class ClubsPageViewController: UICollectionViewController {
         return cell
     }
     
-    }
 }
