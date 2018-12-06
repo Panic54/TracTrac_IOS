@@ -12,36 +12,60 @@ import CoreData
 
 class UserPageViewController: UIViewController {
     
-   
+    @IBOutlet var name: UITextField!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var username: UITextField!
+    
+    var emailString = String()
+    var passwordString = String()
     
     @IBAction func logoutButton(_ sender: Any) {
     print("Logout button was pressed")
         self.performSegue(withIdentifier: "UserViewSegue", sender: self)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       /*
-        //How to add records to coredata
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        
-        let entity = NSEntityDescription.entity (forEntityName: "User", in: context)
-        let newUser = NSManagedObject (entity: entity!, insertInto: context)
-        
-        newUser.setValue("Pani", forKey: "username")
-        newUser.setValue("123", forKey: "password")
-        newUser.setValue("Mads", forKey: "name")
-        newUser.setValue("123@123.com", forKey: "email")
-        //Add for save
-        do {
-            try context.save()
-        } catch {
-            print("Failed to save")
-        } */
-        fetchData()
-        
+    
+    @IBAction func changeUsername(_ sender: UITextField) {
+       print(sender.text!)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("ViewDidLoad")
+        print(emailString)
+        print(passwordString)
+        
+        confiqureText()
+    }
+    
+   
+    func confiqureText() {
+        // Update the user interface for the detail item.
+        if let detail = detailItem {
+            if let label = email {
+                label.text = detail.text
+            }
+        }
+    }
+    
+    var detailItem: UITextField? {
+        didSet {
+            print("detailItem")
+            confiqureText ()
+        }
+    }
+    /*
+    func confiqureText () {
+        if let detail = detailItem {
+            print("detail sat")
+            if let textField = email {
+                print("textfield sat")
+                textField.text = detail.text
+            }
+        }
+    }
+    */
     func fetchData () {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -51,11 +75,13 @@ class UserPageViewController: UIViewController {
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "username") as! String)
+                    print(data.value(forKey: "email") as? String)
             }
+            
         } catch {
             print("Failed")
         }
+    
     }
     
     func saveData () {

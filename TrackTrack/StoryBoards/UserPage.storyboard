@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--User Page View Controller-->
         <scene sceneID="n0x-av-1aL">
             <objects>
-                <viewController id="Xui-2m-NhU" customClass="SearchViewController" customModule="TracTrac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xui-2m-NhU" customClass="UserPageViewController" customModule="TracTrac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vz7-ZE-pJV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeUsername:" destination="Xui-2m-NhU" eventType="editingDidEnd" id="fWv-We-ZHN"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PN-ac-Voh">
                                 <rect key="frame" x="16" y="195" width="343" height="30"/>
@@ -100,6 +103,12 @@
                         <viewLayoutGuide key="safeArea" id="mmy-2Q-1UD"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="Ouo-EC-k29"/>
+                    <connections>
+                        <outlet property="email" destination="xcS-dS-tUx" id="pjL-7I-8t6"/>
+                        <outlet property="name" destination="6Vr-JS-3ob" id="ahE-Hf-2Tn"/>
+                        <outlet property="password" destination="6PN-ac-Voh" id="aF9-3z-KNo"/>
+                        <outlet property="username" destination="7eK-F3-TzF" id="ELO-Mg-ggn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txq-c3-rR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
