@@ -104,6 +104,7 @@
                             <constraint firstItem="NxR-gi-X2A" firstAttribute="centerX" secondItem="knC-sc-PE0" secondAttribute="centerX" id="d1W-Iu-MpR"/>
                             <constraint firstItem="knC-sc-PE0" firstAttribute="trailing" secondItem="c7f-iQ-EKi" secondAttribute="trailing" constant="16" id="fcx-8r-Wwl"/>
                             <constraint firstItem="QMH-ex-uN7" firstAttribute="top" secondItem="NxR-gi-X2A" secondAttribute="bottom" constant="24" id="hQb-Uz-Sh3"/>
+                            <constraint firstItem="QMH-ex-uN7" firstAttribute="width" secondItem="LTn-iy-aET" secondAttribute="height" multiplier="100:667" id="hTG-l3-vRK"/>
                             <constraint firstItem="c7f-iQ-EKi" firstAttribute="leading" secondItem="knC-sc-PE0" secondAttribute="leading" constant="16" id="kxr-ui-gaL"/>
                             <constraint firstItem="ZdX-Uk-cUV" firstAttribute="centerX" secondItem="knC-sc-PE0" secondAttribute="centerX" id="rdY-i4-hca"/>
                             <constraint firstItem="DE0-ad-16n" firstAttribute="centerX" secondItem="knC-sc-PE0" secondAttribute="centerX" id="w93-Rb-Ugj"/>
@@ -112,6 +113,8 @@
                         <viewLayoutGuide key="safeArea" id="knC-sc-PE0"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="c7f-iQ-EKi" id="pEx-Wk-w1h"/>
+                        <outlet property="password" destination="NxR-gi-X2A" id="yeS-Z6-ZLF"/>
                         <segue destination="O7P-cr-tEK" kind="showDetail" identifier="LoginViewSegue" id="yrn-fx-qYg"/>
                     </connections>
                 </viewController>
@@ -214,6 +217,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="2kW-YS-mO1" userLabel="User"/>
                     <connections>
+                        <outlet property="email" destination="hmX-pa-nzS" id="Wnl-BR-AaL"/>
+                        <outlet property="password" destination="Ed6-b9-aSW" id="m3N-u0-NW4"/>
                         <segue destination="BEh-en-AwS" kind="showDetail" identifier="UserViewSegue" id="KxO-2v-exM"/>
                     </connections>
                 </viewController>

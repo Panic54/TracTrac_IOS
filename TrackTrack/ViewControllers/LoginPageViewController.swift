@@ -11,9 +11,10 @@ import UIKit
 import CoreData
 
 class LoginPageViewController: UIViewController {
+
+    @IBOutlet var email: UITextField!
     
     @IBOutlet var password: UITextField!
-    @IBOutlet var email: UITextField!
     
     @IBAction func loginButton(_ sender: Any) {
         print("Button was pressed, inshallah")

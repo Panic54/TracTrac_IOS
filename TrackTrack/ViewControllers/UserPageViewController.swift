@@ -12,10 +12,9 @@ import CoreData
 
 class UserPageViewController: UIViewController {
     
-    @IBOutlet var name: UITextField!
+    @IBOutlet var password: UITextField!    
     @IBOutlet var email: UITextField!
-    @IBOutlet var password: UITextField!
-    @IBOutlet var username: UITextField!
+    
     
     var emailString = String()
     var passwordString = String()
