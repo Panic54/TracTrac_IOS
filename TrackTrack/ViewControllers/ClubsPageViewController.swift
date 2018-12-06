@@ -22,6 +22,9 @@ class ClubsPageViewController: UICollectionViewController {
         let width = collectionView!.frame.width / 2
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
+        
+       // Club.layer.borderWidth = 10
+       // UIImage.layer.borderColor = UIColor.black.cgColor
     }
     
     func fillClubs() {
@@ -29,7 +32,7 @@ class ClubsPageViewController: UICollectionViewController {
                            Club(image: UIImage(named:"abeamconsulting")),
                            Club(image: UIImage(named: "boldhorizons")),
                             Club(image: UIImage(named: "cya")),
-                            Club(image:UIImage(named:"cna")),
+                            Club(image: UIImage(named: "cna")),
                             Club(image: UIImage(named: "cnsp")),
                             Club(image: UIImage(named: "dof")),
                             Club(image: UIImage(named: "fedo")),
@@ -62,7 +65,6 @@ class ClubsPageViewController: UICollectionViewController {
                 clubs.append(club)
             }
         }
-
     }
    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

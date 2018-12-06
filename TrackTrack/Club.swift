@@ -14,11 +14,9 @@ class Club  {
     
     init?(image: UIImage? = UIImage(named: "defaultImage")) {
         
-        
         guard let clubsImage = image else {
             return nil
         }
-        
         self.image = clubsImage
     }
 }
