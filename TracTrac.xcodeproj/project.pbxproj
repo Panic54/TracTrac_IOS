@@ -22,7 +22,6 @@
 		9312E8C721A68E6800269175 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E8C621A68E6800269175 /* SearchCell.swift */; };
 		931F32A62194345D008980FE /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931F32A52194345D008980FE /* EventCell.swift */; };
 		934C579621A2E34700C50142 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C579521A2E34700C50142 /* SearchPageViewController.swift */; };
-		935D07B5219D6CE400667358 /* UserPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935D07B4219D6CE400667358 /* UserPage.storyboard */; };
 		937FD0AB216602BD00CC39B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AA216602BD00CC39B8 /* AppDelegate.swift */; };
 		937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AC216602BD00CC39B8 /* ViewController.swift */; };
 		937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0AE216602BD00CC39B8 /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		9312E8C621A68E6800269175 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		931F32A52194345D008980FE /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		934C579521A2E34700C50142 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
-		935D07B4219D6CE400667358 /* UserPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserPage.storyboard; sourceTree = "<group>"; };
 		937FD0A7216602BD00CC39B8 /* TracTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TracTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937FD0AA216602BD00CC39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937FD0AC216602BD00CC39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				9311479C216F3B900010A9FD /* EventPage.storyboard */,
 				9311479E216F3BA40010A9FD /* SearchPage.storyboard */,
 				93114796216F3B490010A9FD /* HomePage.storyboard */,
-				935D07B4219D6CE400667358 /* UserPage.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935D07B5219D6CE400667358 /* UserPage.storyboard in Resources */,
 				93114797216F3B490010A9FD /* HomePage.storyboard in Resources */,
 				937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */,
 				1276165021B340DE00F6DB9F /* ClubsPage.storyboard in Resources */,

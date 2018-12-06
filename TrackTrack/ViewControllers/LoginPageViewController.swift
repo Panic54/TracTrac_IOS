@@ -18,6 +18,7 @@ class LoginPageViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         print("Button was pressed, inshallah")
+
         //print(password.text) as! String
         print(fetchData(password: password.text as! String, email: email.text as! String))
         if (fetchData(password: password.text as! String, email: email.text as! String)) {
@@ -113,6 +114,13 @@ class LoginPageViewController: UIViewController {
     
     }
     
+    /*func createAlert (title: String, message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.defailt, handler: { (UIAlertAction) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }*/
     
 }
 
