@@ -63,7 +63,6 @@ class ClubsPageViewController: UICollectionViewController {
             }
         }
 
-        
     }
    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
