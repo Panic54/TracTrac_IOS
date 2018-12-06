@@ -28,11 +28,19 @@ class LoginPageViewController: UIViewController {
             self.performSegue(withIdentifier: "LoginViewSegue", sender: self)
         }
           
-        else if (email.text != "" || password.text != "" && !fetchData(password: password.text as! String, email: email.text as! String)) {
+        else if (email.text != "" && password.text != "" && !fetchData(password: password.text as! String, email: email.text as! String)) {
             saveData(email: email.text as! String, password: password.text as! String)
             print("saving User")
             self.performSegue(withIdentifier: "LoginViewSegue", sender: self)
         }
+        
+        let alertController = UIAlertController(title: "E-mail or password is missing", message: "Please type in your e-mail or password", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,6 +67,7 @@ class LoginPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          print("View has loaded")
+    
     }
     
     func saveData ( email: String, password: String) {
@@ -113,14 +122,6 @@ class LoginPageViewController: UIViewController {
          return false;
     
     }
-    
-    /*func createAlert (title: String, message:String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.defailt, handler: { (UIAlertAction) in
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }*/
     
 }
 
