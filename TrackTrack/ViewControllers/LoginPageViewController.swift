@@ -34,9 +34,17 @@ class LoginPageViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let userController = segue.destination as! UserPageViewController
-        userController.emailString = email.text!
-        userController.passwordString = password.text!
+        //New Code another try
+        guard let textSender = segue.destination as? UserPageViewController else {
+            return
+        }
+        textSender.emailString = email.text!
+        textSender.passwordString = password.text!
+        
+        //Old code
+        //let userController = segue.destination as! UserPageViewController
+        //userController.emailString = email.text!
+        //userController.passwordString = password.text!
     }
     
     @IBAction func emailAction(_ sender: Any) {

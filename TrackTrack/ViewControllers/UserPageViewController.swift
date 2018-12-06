@@ -36,10 +36,11 @@ class UserPageViewController: UIViewController {
         print(emailString)
         print(passwordString)
         
+        email.text = emailString
+        password.text = passwordString
         confiqureText()
     }
     
-   
     func confiqureText() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
