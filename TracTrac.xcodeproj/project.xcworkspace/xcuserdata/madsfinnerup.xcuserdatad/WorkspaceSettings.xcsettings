@@ -6,10 +6,8 @@
 	<string>UseAppPreferences</string>
 	<key>CustomBuildLocationType</key>
 	<string>RelativeToDerivedData</string>
-	<key>DerivedDataCustomLocation</key>
-	<string>/Users/madsfinnerup/Documents/DTU/5. Semester/Swift</string>
 	<key>DerivedDataLocationStyle</key>
-	<string>AbsolutePath</string>
+	<string>Default</string>
 	<key>EnabledFullIndexStoreVisibility</key>
 	<false/>
 	<key>IssueFilterStyle</key>

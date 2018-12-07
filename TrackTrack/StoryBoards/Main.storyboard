@@ -310,13 +310,14 @@ or</string>
                     <connections>
                         <outlet property="email" destination="ghf-dh-Y0p" id="FXj-2I-KdN"/>
                         <outlet property="password" destination="q0T-sa-vTY" id="Vrf-UL-FPB"/>
+                        <segue destination="dMr-bI-Ybh" kind="show" identifier="UserViewSegue" id="axj-Py-qGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyT-6a-gWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="830" y="1412"/>
         </scene>
-        <!--Events-->
+        <!--Event-->
         <scene sceneID="umU-Ci-pgO">
             <objects>
                 <tableViewController id="eSI-ad-dmz" customClass="EventTableViewController" customModule="TracTrac" customModuleProvider="target" sceneMemberID="viewController">
@@ -458,7 +459,7 @@ or</string>
                             <outlet property="delegate" destination="eSI-ad-dmz" id="HPL-lo-8cb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Events" image="eventsIcon" id="r5F-qo-8xN"/>
+                    <tabBarItem key="tabBarItem" title="Event" image="eventsIcon" id="r5F-qo-8xN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kp-oa-jNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
