@@ -30,8 +30,8 @@ class HomeViewController: UITableViewController {
     
     func fillView()  {
         print("FillView func")
-        home.append(Home(pictur: "sky", text01: "test01"))
-        home.append(Home(pictur: "HomeImage02", text01: "test02"))
+        home.append(Home(pictur: "sky", text01: "Sky for the win"))
+        home.append(Home(pictur: "HomeImage02", text01: "YouRock"))
         home.append(Home(pictur: "HomeImage02", text01: "Another Great run!"))
         home.append(Home(pictur: "frederikogniko", text01: "Bring it, niko!"))
         home.append(Home(pictur: "HomeImage03", text01: "surfski"))
@@ -44,8 +44,6 @@ class HomeViewController: UITableViewController {
         print("TableView func")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
-        
-        print("test this")
         
         cell.homePicture?.image = UIImage(named: home[indexPath.row].pictur)
         cell.textField.text = home [indexPath.row].text01
