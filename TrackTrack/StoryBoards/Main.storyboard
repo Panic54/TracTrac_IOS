@@ -73,8 +73,8 @@
                             <outlet property="delegate" destination="C13-5e-Mar" id="j51-CD-OFc"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Clubs" image="clubsIcon" id="wUp-jM-4Ce"/>
-                    <navigationItem key="navigationItem" title="Clubs" id="bGz-Rs-gJb" userLabel="Clubs"/>
+                    <tabBarItem key="tabBarItem" title="Clubs" image="clubsIcon" id="RGm-w1-ZpB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BR9-82-mKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,13 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eld-mb-Aa7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="User" id="xxd-I4-g8T"/>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-8n-erS">
                                 <rect key="frame" x="16" y="166" width="343" height="30"/>
                                 <color key="tintColor" red="0.2292856872" green="0.35111221669999998" blue="0.59596258400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -220,12 +213,6 @@ or</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3T-RM-gsf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="User" id="a4i-14-9xG"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1w-cl-UU7">
                                 <rect key="frame" x="16" y="281" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.35294117650000001" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -277,17 +264,15 @@ or</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="leading" secondItem="ghf-dh-Y0p" secondAttribute="leading" id="0eq-lR-d0n"/>
+                            <constraint firstItem="nyZ-X9-grr" firstAttribute="top" secondItem="cVn-Pq-PsH" secondAttribute="top" constant="99" id="7pd-jt-JA6"/>
                             <constraint firstItem="UM2-oH-Aw8" firstAttribute="top" secondItem="nyZ-X9-grr" secondAttribute="bottom" constant="8" id="8s6-VY-5Jv"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="leading" secondItem="nyZ-X9-grr" secondAttribute="leading" id="BpP-E0-k3O"/>
                             <constraint firstItem="O4N-p2-3c0" firstAttribute="top" secondItem="c1w-cl-UU7" secondAttribute="bottom" constant="18" id="Cxf-ov-fv1"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="top" secondItem="ghf-dh-Y0p" secondAttribute="bottom" constant="18" id="DyZ-h5-33G"/>
                             <constraint firstItem="keF-YA-EvF" firstAttribute="centerY" secondItem="c1w-cl-UU7" secondAttribute="centerY" id="EAY-au-Hba"/>
                             <constraint firstItem="keF-YA-EvF" firstAttribute="top" secondItem="ghf-dh-Y0p" secondAttribute="bottom" constant="23" id="IGG-QV-xlc"/>
-                            <constraint firstItem="c1w-cl-UU7" firstAttribute="centerX" secondItem="R3T-RM-gsf" secondAttribute="centerX" id="Jqn-PY-qIO"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="centerX" secondItem="O4N-p2-3c0" secondAttribute="centerX" constant="6.5" id="KcV-bQ-rYl"/>
-                            <constraint firstItem="R3T-RM-gsf" firstAttribute="leading" secondItem="nze-Yf-8tZ" secondAttribute="leading" id="Lw1-ff-cka"/>
                             <constraint firstItem="keF-YA-EvF" firstAttribute="leading" secondItem="cVn-Pq-PsH" secondAttribute="leading" constant="302" id="PEs-et-4pD"/>
-                            <constraint firstItem="nyZ-X9-grr" firstAttribute="top" secondItem="R3T-RM-gsf" secondAttribute="bottom" constant="55" id="QPP-5M-udb"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="trailing" secondItem="nze-Yf-8tZ" secondAttribute="trailingMargin" id="Sbf-lC-yHZ"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="trailing" secondItem="nyZ-X9-grr" secondAttribute="trailing" id="SjX-UZ-Uda"/>
                             <constraint firstItem="c1w-cl-UU7" firstAttribute="trailing" secondItem="ghf-dh-Y0p" secondAttribute="trailing" id="VUX-kN-bZM"/>
@@ -306,7 +291,6 @@ or</string>
                         <viewLayoutGuide key="safeArea" id="cVn-Pq-PsH"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="Ohp-Nx-q6M" userLabel="User"/>
-                    <navigationItem key="navigationItem" id="Yao-NK-iuh"/>
                     <connections>
                         <outlet property="email" destination="ghf-dh-Y0p" id="FXj-2I-KdN"/>
                         <outlet property="password" destination="q0T-sa-vTY" id="Vrf-UL-FPB"/>
