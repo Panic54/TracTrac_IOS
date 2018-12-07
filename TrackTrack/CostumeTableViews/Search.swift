@@ -25,4 +25,5 @@ class Search  {
 enum SportType: String {
     case sailing = "Sailing"
     case running = "Running"
+    case other = "Other"
 }

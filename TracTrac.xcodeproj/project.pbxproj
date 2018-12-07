@@ -14,6 +14,7 @@
 		12C071D321B435BD0012DE05 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D221B435BC0012DE05 /* LoginPageViewController.swift */; };
 		12C071D521B47B870012DE05 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C071D421B47B870012DE05 /* UserPageViewController.swift */; };
 		9302350F21B532B700CC5E96 /* TracTrac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9302350D21B532B700CC5E96 /* TracTrac.xcdatamodeld */; };
+		930CFADC21BA938F00799773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930CFADB21BA938F00799773 /* Main.storyboard */; };
 		93114797216F3B490010A9FD /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93114796216F3B490010A9FD /* HomePage.storyboard */; };
 		9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479A216F3B770010A9FD /* LoginPage.storyboard */; };
 		9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311479C216F3B900010A9FD /* EventPage.storyboard */; };
@@ -24,7 +25,6 @@
 		934C579621A2E34700C50142 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C579521A2E34700C50142 /* SearchPageViewController.swift */; };
 		937FD0AB216602BD00CC39B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AA216602BD00CC39B8 /* AppDelegate.swift */; };
 		937FD0AD216602BD00CC39B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937FD0AC216602BD00CC39B8 /* ViewController.swift */; };
-		937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937FD0AE216602BD00CC39B8 /* Main.storyboard */; };
 		938DB9EC21AFE39100A3E069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938DB9EB21AFE39100A3E069 /* Assets.xcassets */; };
 		93B21AD6218B0915000F061F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B21AD5218B0915000F061F /* SearchViewController.swift */; };
 		93B4596A2181AF33005BF668 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B459692181AF33005BF668 /* EventTableViewController.swift */; };
@@ -42,6 +42,7 @@
 		12C071D221B435BC0012DE05 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		12C071D421B47B870012DE05 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		9302350E21B532B700CC5E96 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		930CFADB21BA938F00799773 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		93114796216F3B490010A9FD /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		9311479A216F3B770010A9FD /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		9311479C216F3B900010A9FD /* EventPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventPage.storyboard; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		937FD0A7216602BD00CC39B8 /* TracTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TracTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937FD0AA216602BD00CC39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937FD0AC216602BD00CC39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		937FD0AF216602BD00CC39B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		937FD0B6216602BF00CC39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938DB9EB21AFE39100A3E069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B21AD5218B0915000F061F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		931147A0216F3BAF0010A9FD /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				937FD0AE216602BD00CC39B8 /* Main.storyboard */,
+				930CFADB21BA938F00799773 /* Main.storyboard */,
 				1276165221B340DE00F6DB9F /* ClubsPage.storyboard */,
 				9311479A216F3B770010A9FD /* LoginPage.storyboard */,
 				9311479C216F3B900010A9FD /* EventPage.storyboard */,
@@ -114,7 +114,6 @@
 				937FD0AA216602BD00CC39B8 /* AppDelegate.swift */,
 				937FD0B6216602BF00CC39B8 /* Info.plist */,
 				938DB9EB21AFE39100A3E069 /* Assets.xcassets */,
-				12C071C321B407400012DE05 /* Club.swift */,
 			);
 			path = TrackTrack;
 			sourceTree = "<group>";
@@ -137,6 +136,7 @@
 		93B459732181B078005BF668 /* CostumeTableViews */ = {
 			isa = PBXGroup;
 			children = (
+				12C071C321B407400012DE05 /* Club.swift */,
 				12C071CD21B40CF50012DE05 /* ClubsCell.swift */,
 				931F32A52194345D008980FE /* EventCell.swift */,
 				93B4596F2181B06C005BF668 /* Event.swift */,
@@ -206,8 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930CFADC21BA938F00799773 /* Main.storyboard in Resources */,
 				93114797216F3B490010A9FD /* HomePage.storyboard in Resources */,
-				937FD0B0216602BD00CC39B8 /* Main.storyboard in Resources */,
 				1276165021B340DE00F6DB9F /* ClubsPage.storyboard in Resources */,
 				9311479B216F3B770010A9FD /* LoginPage.storyboard in Resources */,
 				9311479D216F3B900010A9FD /* EventPage.storyboard in Resources */,
@@ -253,14 +253,6 @@
 				1276165121B340DE00F6DB9F /* Base */,
 			);
 			name = ClubsPage.storyboard;
-			sourceTree = "<group>";
-		};
-		937FD0AE216602BD00CC39B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				937FD0AF216602BD00CC39B8 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

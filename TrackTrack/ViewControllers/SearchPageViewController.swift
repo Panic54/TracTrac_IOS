@@ -29,13 +29,17 @@ class SearchPageViewController: UIViewController, UITableViewDataSource, UITable
     func setUpSearchList () {
         
         //Sailing Test
-        searchArray.append(Search(emblem: "EuroSail", text01: "SuperSailing", catagory: .sailing))
+        searchArray.append(Search(emblem: "HomeImage01", text01: "SuperSailing", catagory: .sailing))
         searchArray.append(Search(emblem: "EuroSail", text01: "JustNormalSailing", catagory: .sailing))
+        searchArray.append(Search(emblem: "frederikogniko", text01: "Sail With Frederik", catagory: .sailing))
         
         //Running Test
-        searchArray.append(Search(emblem: "EuroSail", text01: "SuperRunning", catagory: .running))
-        searchArray.append(Search(emblem: "EuroSail", text01: "JustNormalRunning", catagory: .running))
+        searchArray.append(Search(emblem: "HomeImage02", text01: "SuperRunning", catagory: .running))
+        searchArray.append(Search(emblem: "redbull", text01: "JustNormalRunning", catagory: .running))
         
+        //Other Test
+        searchArray.append(Search(emblem: "extreme", text01: "Bowling", catagory: .other))
+        searchArray.append(Search(emblem: "stg", text01: "Snowboarding", catagory: .other))
         currentArray = searchArray
     }
     

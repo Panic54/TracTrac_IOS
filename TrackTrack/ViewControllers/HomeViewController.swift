@@ -32,6 +32,10 @@ class HomeViewController: UITableViewController {
         print("FillView func")
         home.append(Home(pictur: "sky", text01: "test01"))
         home.append(Home(pictur: "HomeImage02", text01: "test02"))
+        home.append(Home(pictur: "HomeImage02", text01: "Another Great run!"))
+        home.append(Home(pictur: "frederikogniko", text01: "Bring it, niko!"))
+        home.append(Home(pictur: "HomeImage03", text01: "surfski"))
+        home.append(Home(pictur: "zeil", text01: "zeil"))
         //let sampleHome = [Home(pictur:"EuroSail", text01: "Test"), ]
     }
     

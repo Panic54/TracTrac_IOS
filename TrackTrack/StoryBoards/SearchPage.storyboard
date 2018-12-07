@@ -23,6 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="647" id="2Yu-dA-db3"/>
                                     <constraint firstAttribute="width" constant="375" id="CQC-aX-20y"/>
+                                    <constraint firstAttribute="width" secondItem="c2n-Er-Gn2" secondAttribute="height" multiplier="375:647" id="yrn-Yf-Qye"/>
                                 </constraints>
                                 <searchBar key="tableHeaderView" contentMode="redraw" showsScopeBar="YES" id="EK0-Mn-Yg8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -45,17 +46,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-lD-p8L">
-                                                    <rect key="frame" x="166" y="25" width="194" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-lD-p8L">
+                                                    <rect key="frame" x="166" y="25" width="46.5" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-zF-T4d">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-zF-T4d">
                                                     <rect key="frame" x="15" y="15" width="132.5" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="74" id="DkI-0T-Zav"/>
+                                                        <constraint firstAttribute="width" constant="132.5" id="iIh-Ff-C2V"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-m4-Ned">
-                                                    <rect key="frame" x="166" y="61" width="194" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-m4-Ned">
+                                                    <rect key="frame" x="166" y="61" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

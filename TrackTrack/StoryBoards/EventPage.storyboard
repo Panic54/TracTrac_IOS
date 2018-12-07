@@ -27,21 +27,28 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nzn-kS-TVY">
                                             <rect key="frame" x="8" y="11" width="134" height="134"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="134" id="4UB-CV-CId"/>
                                                 <constraint firstAttribute="width" constant="134" id="n2W-1U-0fc"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLX-Ew-VIR">
                                             <rect key="frame" x="162" y="120" width="19" height="18"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="19" id="7OB-54-6ge"/>
                                                 <constraint firstAttribute="height" constant="18" id="agP-ty-uhU"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bk4-5q-08M">
                                             <rect key="frame" x="162" y="90" width="19" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="Nf9-xB-DVR"/>
+                                                <constraint firstAttribute="width" constant="19" id="r4q-fA-qHR"/>
+                                            </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BeD-HG-B26">
                                             <rect key="frame" x="162" y="60" width="19" height="18"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="19" id="Prm-zO-PBm"/>
                                                 <constraint firstAttribute="height" constant="18" id="enH-Qv-Wa2"/>
                                             </constraints>
                                         </imageView>
@@ -76,6 +83,7 @@
                                             <rect key="frame" x="162" y="30" width="19" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="1Tv-1n-1Fj"/>
+                                                <constraint firstAttribute="width" constant="19" id="XAm-8c-VIe"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQF-gS-4oF">

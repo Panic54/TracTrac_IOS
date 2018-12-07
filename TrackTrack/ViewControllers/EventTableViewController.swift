@@ -30,10 +30,28 @@ class EventTableViewController: UITableViewController {
   
     func fillView()  {
          print("FillView func")
-        let sampleEvent = [Event(flagImage: UIImage(named: "EuroSail"), sportEmblem: UIImage (named: "EuroSail"), dateImage:  UIImage(named: "EuroSail"), raceImage: UIImage (named: "EuroSail"), competitorsImage: UIImage (named: "EuroSail"),
-                                 nameOfEvent: "Test", sportLabel: "String", dateLabel: "Test", competitorsLabel: "test", raceLabel: "test")]
+
+        events.append(Event(flagImage: UIImage(named: "EuroSail"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "03/02-19", competitorsLabel: "48", raceLabel: "12")!)
         
-        events = sampleEvent.compactMap{$0}
+        events.append(Event(flagImage: UIImage(named: "redbull"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "07/03-19", competitorsLabel: "12", raceLabel: "4")!)
+        
+        events.append(Event(flagImage: UIImage(named: "extreme"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "20/03-19", competitorsLabel: "30", raceLabel: "19")!)
+        
+        events.append(Event(flagImage: UIImage(named: "EuroSail"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "30/04-19", competitorsLabel: "20", raceLabel: "12")!)
+        
+        events.append(Event(flagImage: UIImage(named: "redbull"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "05/05-19", competitorsLabel: "72", raceLabel: "21")!)
+        
+        events.append(Event(flagImage: UIImage(named: "extreme"), sportEmblem: UIImage(named: "sportIcon"), dateImage: UIImage(named: "calender"), raceImage: UIImage (named: "races"), competitorsImage: UIImage (named: "part"), nameOfEvent: "Sailing Of Champs", sportLabel: "Sailing", dateLabel: "19/06-19", competitorsLabel: "45", raceLabel: "18")!)
+        
+        
+        
+        
+        /*
+        let sampleEvent = [Event(flagImage: UIImage(named: "EuroSail"), sportEmblem: UIImage (named: "EuroSail"), dateImage:  UIImage(named: "EuroSail"), raceImage: UIImage (named: "EuroSail"), competitorsImage: UIImage (named: "EuroSail"),
+            nameOfEvent: "Test", sportLabel: "String", dateLabel: "01/03-19", competitorsLabel: "test", raceLabel: "test"),
+                           Event(flagImage: UIImage(named: "frederikogniko"), sportEmblem: UIImage (named: "EuroSail") , dateImage: UIImage(named: "eurosail"), raceImage: UIImage(named: "eurosail") , competitorsImage: UIImage(named: "eurosail"), nameOfEvent: "SuperRunning", sportLabel: "RunnersGuide", dateLabel: "24/05-19", competitorsLabel: "Run", raceLabel: "Faster")]
+        
+        */
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt
