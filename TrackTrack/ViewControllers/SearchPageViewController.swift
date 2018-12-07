@@ -54,8 +54,7 @@ class SearchPageViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
-      
+    let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell      
         cell.text01?.text = currentArray[indexPath.row].text01
         cell.text02?.text = currentArray[indexPath.row].catagory.rawValue
         cell.emblem?.image = UIImage(named: searchArray[indexPath.row].emblem)
